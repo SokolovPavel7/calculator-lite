@@ -32,9 +32,8 @@ function division() {
   num2 = document.getElementById('n2').value;
   num2 = parseInt(num2);
   result = num1 / num2;
-  return (num2 = 0)
-    ? (document.getElementById('out').innerHTML =
-        '"Деление на ноль невозможно"')
+  return num2 === 0
+    ? (document.getElementById('out').innerHTML = 'Деление на ноль невозможно!')
     : (document.getElementById('out').innerHTML = result);
 }
 function del() {
